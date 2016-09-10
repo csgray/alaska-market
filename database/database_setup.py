@@ -14,7 +14,7 @@ def connect (user='myapp', password='dbpass', host='localhost', port=15432, db='
 
     return con, meta
 
-con, meta = connect()
+con, meta = connect('developer', 'dbpass', 'localhost', 15432, 'market')
 
 businesses = Table('businesses', meta,
     Column('id', Integer, primary_key=True),
